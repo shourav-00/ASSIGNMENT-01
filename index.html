@@ -9,6 +9,7 @@
         .bgi{
             background-image: url("Hero-bg.png");
             padding-bottom: 158px;
+            background-size: cover;
         }
 
         body {
@@ -64,15 +65,24 @@ form textarea {
         .butt{
             border-color: none;
             font-size: 20px;
-            background-color: blue;
+            background-color: rgb(109, 109, 167);
             border-radius: 10px;
             color:azure;
             padding:12px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .butt:hover {
+            transform: scale(1.05); 
+            
         }
 
         .lp{
-            font-size:60px;
+            font-size:20px;
             /* color:#0000FF; */
+            display:flex;
+            gap: 5px;
             padding-top: 50px;
             padding-left:70px;
 
@@ -107,12 +117,20 @@ form textarea {
 
         }
         .hw{
-             display: flex;
+            display: flex;
+            /* gap: 20px; */
+            /* padding: 30px;
+            max-width: 800px; */
+            /* margin: auto; */
             justify-content: space-between;
             align-items: center;
             gap: 203px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            
         }
         .tst-img{
+            border-radius: 10px;
             width: 403px;
             height: 228px;
         }
@@ -174,15 +192,23 @@ form textarea {
         .fm{
             margin-top: 15px;
         }
-         .bcc{
+
+        .bcc{
             margin-top: 0px;
+            margin-bottom: 0px;    /*  here i add this */
             background-color:#F5F8FF;
             padding-top: 60px;
             padding-bottom: 100px;
             overflow: hidden;
-         }
-        
+        }
 
+        footer{
+            margin-top: 0px;  /* but nothing has changed?? */
+        }
+        
+        .sectwo{
+            border-radius: 10px;
+        }
 
      
         /* .lstp{
@@ -202,14 +228,14 @@ form textarea {
         } */
 
         .lstp {
-    background-color: #FFFFFF;
-    padding: 71px 50px;
-    margin: 0 auto;              
-    max-width: 1000px;           
-    border: 2px solid #e0e0e0;   
-    /* border-radius: 10px;
-    box-sizing: border-box; */
-}
+            background-color: #FFFFFF;
+            padding: 71px 50px;
+            margin: 0 auto;              
+            max-width: 1000px;           
+            border: 2px solid #e0e0e0;   
+            border-radius: 10px;
+            box-sizing: border-box; */
+        }
 
        
 
@@ -226,24 +252,26 @@ form textarea {
         }
 
         .hii img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
 
         
         .fnl{
             background-color:#F5F8FF;
             display: flex;
             text-align: center;
-            justify-content: space-between;
+            justify-content: space-around;
+            /* gap: 20px; */
             
         }
-        .foot{
+        /* .foot{
             margin: 80px;
             padding: 90px;
-        }
+        } */
         .fnt{
             font-size: 80px;
         }
@@ -258,11 +286,23 @@ form textarea {
            padding: 10px 0px;
         }
         .jf h6 {
-     margin: 0;
-  }
-  .bye{
-    margin:60px;
-  }
+            margin: 0;
+        }
+        .bye{
+            margin:60px;
+        }
+
+        .cl{
+            display: flex;
+           /* // flex-direction: column; */
+           margin-left:20px ;
+            gap: 20px;
+            padding: 30px;
+            max-width: 800px;
+            /* margin: 30px; */
+            border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
         .logo{
             text-align: center;
             font-size: 60px;
@@ -279,20 +319,32 @@ form textarea {
             margin: 0 auto;
         }
 
-       
+        .fm{
+            font-size: medium;
+            color:black;
+        }
+        .ff{
+            font-size: large;
+        }
+        #but{
+            margin-left:-40px;
+        }
     </style>
+
 </head>
+
+
 <body>
+
+
     <header class="bgi">
-        
         <section>
-            
             <div class="lr">
                 <div class="lp">
-                   <!-- <h3>LOGO</h3> -->
                     <a href="https://www.ghibli.jp/">
-                    <img src="ghibli.jpg" height="80px" width="80px" >
+                    <img src="ghibli.jpg" height="80px" width="80px">
                     </a>
+                    <h2>Ghibli Studio</h2>
                 </div>
                 <div class="rp">
                     <a href="https://www.ghibli.jp/">
@@ -300,12 +352,12 @@ form textarea {
                     </a>
                 </div>    
             </div>
-            <div class="center">
-            <h4 class="h2">Cool Dark UI Template for <br> Webflow Agencies!</h4>
+                <div class="center">
+                <h4 class="h2">Cool Dark UI Template for <br> Webflow Agencies!</h4>
                 <button id="tst"class="butt">Stay Focused</button>
             </div>
-            </section>
-</header>
+        </section>
+    </header>
             
          
 
@@ -368,8 +420,8 @@ form textarea {
                     <img src="avatar.png">
                 </div>
                     <form class="fm">
-                        <input type="text" placeholder="Reveiwer name">
-                        <input type="date" placeholder="Date">
+                        <h6>Dhrubo</h6>
+                        <h6>26-4-25</h6>
                     </form>
 
                 </div>
@@ -382,12 +434,11 @@ form textarea {
                     <img src="icon-star.png">
                     <img src="icon-star.png">
                     <img src="icon-star.png">
-                    <img src="icon-star.png">
-                    <img src="icon-star.png">
+                    
                 </div> 
                 <div>   
                     <h3>Loved by Designers</h3>
-                    <p>This template instantly leveled up our presence.” – Studio Vertex</p>
+                    <p>This template instantly leveled up our presence.” – Studio Vertex.But it have to be more update.</p>
                 </div>
 
                 <div class="cl">
@@ -395,8 +446,8 @@ form textarea {
                     <img src="avatar.png">
                 </div>
                     <form class="fm">
-                        <input type="text" placeholder="Reveiwer name">
-                        <input type="date" placeholder="Date">
+                        <h6>Shourav</h6>
+                        <h6>10-2-25</h6>
                     </form>
 
                 </div>
@@ -411,11 +462,11 @@ form textarea {
                     <img src="icon-star.png">
                     <img src="icon-star.png">
                     <img src="icon-star.png">
-                    <img src="icon-star.png">
+                    
                 </div> 
                 <div>   
                     <h3>Loved by Designers</h3>
-                    <p>This template instantly leveled up our presence.” – Studio Vertex</p>
+                    <p>Good,This template instantly leveled up our presence.” – Studio Vertex.As a customer,I deserve more facility</p>
                 </div>
 
                 <div class="cl">
@@ -423,8 +474,8 @@ form textarea {
                     <img src="avatar.png">
                 </div>
                     <form class="fm">
-                        <input type="text" placeholder="Reveiwer name">
-                        <input type="date" placeholder="Date">
+                     <h6>Jeet</h6>
+                       <h6>14-6-15</h6>
                     </form>
 
                 </div>
@@ -457,14 +508,15 @@ form textarea {
         <h1 class="fnt">Let’s Get in <br>Touch</h1>
         </div>
         <div>
-            <form >
+            <form class="ff">
                 <label for="email">Email</label>
                 <input type="email" class="padd" placeholder="example@email.com" required><br><br>
                 <label for="text">Name</label>
                 <input type="text" class="padd" placeholder="full name" required><br><br>
                 <label for="message">Message</label>
                 <textarea rows="10" colum="20" class="padd" placeholder="write your message...." required></textarea><br><br>
-                <button class="butt">Get in Touch</button>
+                
+                <button id="but" class="butt">Get in Touch</button>
             </form>
         </div>
             </div>
